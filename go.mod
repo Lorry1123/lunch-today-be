@@ -1,4 +1,4 @@
-module lucnh-today-be
+module lunch-today-be
 
 go 1.13
 
