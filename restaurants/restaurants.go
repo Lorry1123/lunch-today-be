@@ -69,7 +69,7 @@ func GetRestuarantsByDate() Result {
 func readConfig() []Restaurant {
 	file, err := ioutil.ReadFile("./config.json")
 	if err != nil {
-		return configs{}
+		return []Restaurant{}
 	}
 
 	res := &configs{}
