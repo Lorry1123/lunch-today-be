@@ -26,7 +26,7 @@ func getDifferntRandomNumbers(r *rand.Rand, size int) []int {
 	ret := map[int]int{}
 	for len(ret) < 4 {
 		n := r.Intn(size)
-		if ret[n] == 1 {
+		if ret[n] != 0 {
 			continue
 		}
 		ret[n] = len(ret) + 1
